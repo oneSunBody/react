@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+import "static/css/common.css"
+import "static/fonts/iconfont.css"
+
+
+import RouteView from "routerView";
+import { BrowserRouter as Router } from "react-router-dom";
+ReactDOM.render(<Router><RouteView /></Router>, document.querySelector("body"));
